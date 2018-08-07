@@ -80,7 +80,7 @@ public class OrmTest {
 //    }
 
 
-
+    @Ignore
     @Test
     public void testInsert(){
         try {
