@@ -41,7 +41,7 @@ public class StudentDao extends BaseDaoSupport<Student,String> {
     }
 
     public List<Student> selectByName(String name) throws Exception{
-        //构建一个QureyRule 查询规则
+        // 构建一个QureyRule 查询规则
         this.dataSource.getDataSourceEntry().set("db_two");
         QueryRule queryRule = QueryRule.getInstance();
         queryRule.andLike("name",name);
