@@ -37,6 +37,7 @@ public class StudentDao extends BaseDaoSupport<Student,String> {
         this.setDataSourceReadOnly(dataSource);
         this.setDataSourceWrite(dataSource);
         this.dataSource.getDataSourceEntry().set("db_two");
+
     }
 
     public List<Student> selectByName(String name) throws Exception{
